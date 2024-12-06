@@ -14,7 +14,9 @@ public class CadastroController {
         String nome = ctx.formParam("nome");
         String cpf = ctx.formParam("cpf");
 
-        ctx.html("<h1>Nome:"+nome.toUpperCase()+" CPF:"+cpf+"</h1>");
+        Map<String, Object> dados = new HashMap<>();
+
+        ctx.render("resposta.html");
     };
 
 
