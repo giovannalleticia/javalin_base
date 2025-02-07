@@ -24,7 +24,7 @@ public class CadastroController {
         String nome = ctx.formParam("nome");
         String email = ctx.formParam("email");
         String telefone = ctx.formParam("telefone");
-
+        
         cadastro.add(new Pessoa(nome, email, telefone));
 
         Map<String,Object> dados = new HashMap<>();
@@ -32,6 +32,7 @@ public class CadastroController {
         dados.put("mensagem", "Cadastro realizado!");
         
         ctx.render("cadastro.html",dados);
+
 
     };
 

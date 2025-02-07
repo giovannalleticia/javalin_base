@@ -2,8 +2,10 @@ package br.edu.ifpr.pgua.eic.tads.controllers;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 
 import br.edu.ifpr.pgua.eic.tads.models.Cadastro;
+import br.edu.ifpr.pgua.eic.tads.models.Pessoa;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
@@ -22,5 +24,5 @@ public class ListaController {
 
         dados.put("lista", lista);
         ctx.render("lista.html", dados);
-    }
+    };
 }
